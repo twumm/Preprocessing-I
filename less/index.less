@@ -1,6 +1,9 @@
 // imports
 @import "reset.less";
 
+// font stack
+@defaultFontStack: 'Titillium Web', sans-serif;
+
 // base font sizes
 @defaultFontSize: 100%;
 @mobileFontSize: 150%;
@@ -19,7 +22,7 @@
 
 :root {
 	font-size: @defaultFontSize;
-	font-family: 'Titillium Web', sans-serif;
+	font-family: @defaultFontStack;
 }
 
 html, body {
