@@ -146,6 +146,21 @@ body {
 body {
   background: white;
 }
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1rem;
+}
+h4 {
+  font-size: 0.5rem;
+}
+a {
+  color: inherit;
+}
 .container {
   width: 70%;
   margin: 0 auto;
@@ -154,4 +169,25 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
+}
+.container header nav {
+  display: flex;
+  align-items: center;
+}
+.container header nav a {
+  padding-left: 50px;
+  text-decoration: none;
+}
+.container main .intro {
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+  background-color: bisque;
+  padding: 30px;
+}
+.container main .intro .about {
+  padding-right: 30px;
+}
+.container main .intro .about h3 {
+  padding-top: 20px;
 }
