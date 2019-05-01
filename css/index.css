@@ -150,3 +150,8 @@ body {
   width: 70%;
   margin: 0 auto;
 }
+.container header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
