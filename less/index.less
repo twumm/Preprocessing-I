@@ -20,6 +20,13 @@
 @mobileBreakpoint: 500px;
 @tabletBreakpoint: 750px;
 
+// colors
+@boxBackground: white;
+@bodyBackground: #F5F5F5;
+
+// border
+@borderStyle: 1px solid grey;
+
 :root {
 	font-size: @defaultFontSize;
 	font-family: @defaultFontStack;
@@ -30,7 +37,7 @@ html, body {
 }
 
 body {
-	background: #F5F5F5;
+	background: @bodyBackground;
 }
 
 h1 {
@@ -75,7 +82,7 @@ a {
 		border: 0.2px solid black;
 		border-radius: 5px;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		background: white;
+		background: @boxBackground;
 	}
 
 	.flex-mixin(@justifyContent) {
@@ -101,7 +108,7 @@ a {
 
 				@media(max-width: @mobileBreakpoint) {
 					padding: 15px 0;
-					border-bottom: 1px solid grey;
+					border-bottom: @borderStyle;
 					width: 100%;
 				}
 			}
