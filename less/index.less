@@ -116,12 +116,22 @@ a {
 	main {
 		.intro {
 			.box-section-style();
-			.flex-mixin(space-around);
 			height: 200px;
 
 			.about {
+				.flex-mixin(space-around);
 				p {
 					padding-top: 20px;
+				}
+				@media(max-width: @mobileBreakpoint) {
+					flex-direction: column;
+				}
+
+				.profile-pic {
+					@media(max-width: @mobileBreakpoint) {
+						padding-top: 10px;
+						text-align: center;
+					}
 				}
 			}
 		}
