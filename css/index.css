@@ -258,3 +258,11 @@ a {
   padding: 20px;
   margin: 10px 0;
 }
+.container main .contact h2,
+.container main .contact h3 {
+  padding-bottom: 10px;
+}
+.container footer {
+  text-align: center;
+  margin: 15px;
+}
