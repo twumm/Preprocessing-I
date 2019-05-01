@@ -123,11 +123,11 @@ a {
 	main {
 		.intro {
 			.box-section-style();
-			height: 200px;
+			// height: 200px;
 
 			.about {
-				.flex-mixin(space-around);
-				p {
+				.flex-mixin(space-between);
+				.about-text {
 					padding-top: 20px;
 				}
 				@media(max-width: @mobileBreakpoint) {
@@ -135,9 +135,16 @@ a {
 				}
 
 				.profile-pic {
+					width: 30%;
+					text-align: center;
+					img {
+						width: 5em;
+						border-radius: 100%;
+					}
 					@media(max-width: @mobileBreakpoint) {
 						padding-top: 10px;
 						text-align: center;
+						width: 100%;
 					}
 				}
 			}

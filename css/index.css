@@ -213,13 +213,12 @@ a {
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background: white;
-  height: 200px;
 }
 .container main .intro .about {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.container main .intro .about p {
+.container main .intro .about .about-text {
   padding-top: 20px;
 }
 @media (max-width: 500px) {
@@ -227,10 +226,19 @@ a {
     flex-direction: column;
   }
 }
+.container main .intro .about .profile-pic {
+  width: 30%;
+  text-align: center;
+}
+.container main .intro .about .profile-pic img {
+  width: 5em;
+  border-radius: 100%;
+}
 @media (max-width: 500px) {
   .container main .intro .about .profile-pic {
     padding-top: 10px;
     text-align: center;
+    width: 100%;
   }
 }
 .container main .skills {
