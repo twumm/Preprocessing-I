@@ -9,10 +9,12 @@
 @mobileFontSize: 150%;
 
 // font sizes
-@xLargeFontSize: 2rem;
-@largeFontSize: 1.5rem;
-@mediumFontSize: 1rem;
-@smallFontSize: .5rem;
+@h1FontSize: 2rem;
+@h2FontSize: 1.5rem;
+@h3FontSize: 1.17rem;
+@h4FontSize: 1rem;
+@h5FontSize: .83rem;
+@h6FontSize: .75rem;
 
 // breakpoints
 @mobileBreakpoint: 550px;
@@ -34,19 +36,27 @@ body {
 }
 
 h1 {
-	font-size: @xLargeFontSize;
+	font-size: @h1FontSize;
 }
 
 h2 {
-	font-size: @largeFontSize;
+	font-size: @h2FontSize;
 }
 
 h3 {
-	font-size: @mediumFontSize;
+	font-size: @h3FontSize;
 }
 
 h4 {
-	font-size: @smallFontSize;
+	font-size: @h4FontSize;
+}
+
+h5 {
+	font-size: @h5FontSize;
+}
+
+h6 {
+	font-size: @h6FontSize;
 }
 
 a {
@@ -66,9 +76,13 @@ a {
 		background: white;
 	}
 
-	header {
+	.flex-mixin(@justifyContent) {
 		display: flex;
-		justify-content: space-between;
+		justify-content: @justifyContent;
+	}
+
+	header {
+		.flex-mixin(space-between);
 		margin: 20px 0;
 
 		nav {
@@ -84,10 +98,8 @@ a {
 	main {
 		.intro {
 			.box-section-style();
-			display: flex;
-			justify-content: space-around;
+			.flex-mixin(space-around);
 			height: 200px;
-			// padding: 30px;
 
 			.about {
 				p {
