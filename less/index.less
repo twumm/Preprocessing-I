@@ -49,11 +49,31 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+// Variables
+@color-blue: cyan;
+
 * {
     box-sizing: border-box;
 }
 
+:root {
+	font-size: 62.5%;
+}
+
 html, body {
     height: 100%;
+}
+
+body {
+	background: @color-blue;
+}
+
+.font-type {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+	font-size: 2rem;
+	.font-type;
 }
 
