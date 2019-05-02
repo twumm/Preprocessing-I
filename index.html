@@ -1,11 +1,13 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <title>My Resume</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -14,6 +16,108 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Martin!</h1>
+      </div>
+      <nav>
+        <a href="#">Blog</a>
+        <a href="#">Projects</a>
+        <a href="#">About Me</a>
+        <a href="#">Contact Me</a>
+      </nav>
+    </header>
+    <main>
+      <section class="intro">
+        <h2>About Me</h2>
+        <div class="about">
+          <div class="about-text">
+            <p>
+              I work at Tectheon (a tech start-up) and consult for companies on web development projects, product
+              management and other internet business.
+            </p>
+          </div>
+          <div class="profile-pic">
+            <img src="./img/avatar.jpg" alt="Martin with a smile">
+            <p>Martin Mensah</p>
+            <h5>Web Developer</h5>
+          </div>
+        </div>
+        
+      </section>
+
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML & CSS</li>
+          <li>JavaScript</li>
+          <li>React & Redux</li>
+          <li>Amazon Web Services</li>
+          <li>Mongo DB</li>
+          <li>CI/CD</li>
+        </ul>
+      </section>
+
+      <section class="work-history">
+        <h2>Work Experience</h2>
+        <article>
+          <div>
+            <img src="" alt="">
+          </div>
+          <div>
+            <h3 class="job-title">Javascript Developer</h3>
+            <h4 class="company-name">Traive</h4>
+            <h5 class="job-date">Dec 2018 - Present</h5>
+            <p class="job-summary">
+              Create product requirements/features based on client's specification.<br>
+              Manage entire software development cycle.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div>
+            <img src="" alt="">
+          </div>
+          <div>
+            <h3 class="job-title">Javascript Developer</h3>
+            <h4 class="company-name">Traive</h4>
+            <h5 class="job-date">Dec 2018 - Present</h5>
+            <p class="job-summary">
+              Create product requirements/features based on client's specification.<br>
+              Manage entire software development cycle.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div>
+            <img src="" alt="">
+          </div>
+          <div>
+            <h3 class="job-title">Javascript Developer</h3>
+            <h4 class="company-name">Traive</h4>
+            <h5 class="job-date">Dec 2018 - Present</h5>
+            <p class="job-summary">
+              Create product requirements/features based on client's specification.<br>
+              Manage entire software development cycle.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="contact">
+        <h2>Let's Vibe</h2>
+        <address>
+          <h3>Contact</h3>
+          <p>P. O. Box AN 6678</p>
+          <p>Accra, Ghana</p>
+        </address>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Martin Twum Mensah</p>
+    </footer>
+  </div>
 </body>
+
 </html>
